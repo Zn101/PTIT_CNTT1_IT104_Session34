@@ -5,4 +5,6 @@ export interface Student {
   birthday?: string;
   hometown?: string;
   address?: string;
+  age?: number;
 }
+
