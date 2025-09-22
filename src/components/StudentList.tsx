@@ -35,6 +35,7 @@ const StudentList: React.FC<StudentListProps> = ({ students, onEdit }) => {
             <TableCell>#</TableCell>
             <TableCell>Mã sinh viên</TableCell>
             <TableCell>Tên sinh viên</TableCell>
+            <TableCell>Tuổi</TableCell>
             <TableCell>Giới tính</TableCell>
             <TableCell>Hành động</TableCell>
           </TableRow>
@@ -45,6 +46,7 @@ const StudentList: React.FC<StudentListProps> = ({ students, onEdit }) => {
               <TableCell>{i + 1}</TableCell>
               <TableCell>{s.id}</TableCell>
               <TableCell>{s.name}</TableCell>
+              <TableCell>{s.age ?? "-"}</TableCell>
               <TableCell>{s.gender}</TableCell>
               <TableCell>
                 <div className="flex gap-2">
@@ -76,3 +78,4 @@ const StudentList: React.FC<StudentListProps> = ({ students, onEdit }) => {
 };
 
 export default StudentList;
+
